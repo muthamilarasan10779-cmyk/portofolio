@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthamilarasan | Portfolio</title>
+
+    <style>
+        /* BASIC SETTINGS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            color: #ffd400;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd400;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #ffd400;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ffd400;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: white;
+        }
+
+        /* GENERAL SECTION */
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            color: #ffd400;
+            margin-bottom: 35px;
+        }
+
+        /* ABOUT */
+        .about {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        /* SKILLS */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1c1c1c;
+            border: 1px solid #ffd400;
+            padding: 18px 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: #ffd400;
+            color: black;
+            transform: translateY(-5px);
+        }
+
+        /* PROJECTS */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1c1c1c;
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            border-color: #ffd400;
+            transform: translateY(-8px);
+        }
+
+        .project-card h3 {
+            color: #ffd400;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* EDUCATION */
+        .education {
+            text-align: center;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact a {
+            color: #ffd400;
+            text-decoration: none;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">MUTHU.</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Hi, I'm <span>Muthamilarasan</span></h1>
+            <p>Engineering Student | IT | Future Developer</p>
+            <a href="#about" class="btn">Explore My Portfolio</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                I am an engineering student interested in technology,
+                web development, and learning new skills.
+                I enjoy exploring new ideas and building creative projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Prompt Engineering</div>
+            <div class="skill">Communication</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Muthu TV Shop</h3>
+                <p>
+                    A TV sales website designed with a modern gaming-style
+                    theme using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>My Portfolio</h3>
+                <p>
+                    My personal portfolio website showcasing my skills,
+                    education, and projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Mount Zion College of Engineering and Technology</h3>
+            <p>Department: Information Technology</p>
+            <p>Year: First Year Engineering Student</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <p>Email:</p>
+            <a href="mailto:muthamilarasan10779@mountzion.ac.in">
+                muthamilarasan10779@mountzion.ac.in
+            </a>
+            <br><br>
+            <a href="mailto:muthamilarasan10779@mountzion.ac.in" class="btn">
+                Send Me an Email
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Muthamilarasan | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
